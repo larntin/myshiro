@@ -11,7 +11,7 @@
 	<!-- SpringMVC中需要扫描到Controller来找到http请求的处理类 -->
 	<context:component-scan base-package="com.dengdongdong.myshiro.login.controller"></context:component-scan>
 
-	<!-- 加上HttpMessageConterter进行消息格式的转化，否则浏览器不能识别response的application/type，会报406错误 -->
+	<!-- 加上HttpMessageConverter进行消息格式的转化，否则浏览器不能识别response的application/type，会报406错误 -->
 	<mvc:annotation-driven content-negotiation-manager="contentNegotiationManager">
 		<mvc:message-converters register-defaults="true">
 			<!-- 将StringHttpMessageConverter的默认编码设为UTF-8 -->
